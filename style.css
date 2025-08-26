@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header #page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffe600;
+}
+
+header #page p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+#movie_list {
+    margin-top: 25px;
+}
+
+#movie_list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffe600;
+    padding-bottom: 5px;
+    color: #ffe600;
+}
+
+#movie_list ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#movie_list li {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+#movie_list li:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.delete {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.delete:hover {
+    background-color: #e63748;
+}
+
+form#add_movie {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+form#add_movie input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form#add_movie button {
+    padding: 10px 20px;
+    background-color: #69f618;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form#add_movie button:hover {
+    background-color: #ffd000;
+}
